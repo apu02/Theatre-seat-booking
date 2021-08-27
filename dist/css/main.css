@@ -1,6 +1,4 @@
-// import font from google fonts
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
-
 * {
   margin: 0;
   padding: 0;
@@ -26,13 +24,12 @@ body {
 
 .movie-container {
   display: flex;
-
-  select {
-    margin-left: 1.5rem;
-    padding: 0.5rem;
-    border-radius: 5px;
-    outline: none;
-  }
+}
+.movie-container select {
+  margin-left: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  outline: none;
 }
 
 .showcase {
@@ -41,17 +38,15 @@ body {
   list-style: none;
   display: flex;
   margin: 3.5rem 0;
-
-  li {
-    display: flex;
-    margin-right: 2rem;
-    font-size: 1.7rem;
-    color: #777;
-
-    small {
-      margin-left: 0.4rem;
-    }
-  }
+}
+.showcase li {
+  display: flex;
+  margin-right: 2rem;
+  font-size: 1.7rem;
+  color: #777;
+}
+.showcase li small {
+  margin-left: 0.4rem;
 }
 
 .seat {
@@ -61,35 +56,30 @@ body {
   margin: 3px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-
-  &.selected {
-    background: #6feaf6;
-  }
-
-  &.occupied {
-    background: #fff;
-  }
+}
+.seat.selected {
+  background: #6feaf6;
+}
+.seat.occupied {
+  background: #fff;
 }
 
 .container {
   perspective: 1000px;
   margin-bottom: 2.5rem;
-  .row {
-    display: flex;
-
-    .seat:nth-of-type(2) {
-      margin-right: 1.8rem;
-    }
-
-    .seat:nth-last-of-type(2) {
-      margin-left: 1.8rem;
-    }
-
-    .seat:not(.occupied):hover {
-      cursor: pointer;
-      transform: scale(1.2);
-    }
-  }
+}
+.container .row {
+  display: flex;
+}
+.container .row .seat:nth-of-type(2) {
+  margin-right: 1.8rem;
+}
+.container .row .seat:nth-last-of-type(2) {
+  margin-left: 1.8rem;
+}
+.container .row .seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .screen {
@@ -105,3 +95,5 @@ body {
   color: #6feaf6;
   margin: 0 0.4rem;
 }
+
+/*# sourceMappingURL=main.css.map */
